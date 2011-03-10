@@ -1,0 +1,18 @@
+ORIG_PN="vte"
+inherit gnome2
+
+DESCRIPTION="GNOME Virtual Terminal Emulator"
+
+PKG_NAMES="${PN} libvte3.0_9 libvte3.0-devel girepository-Vte3.0"
+vte3_0_CONTENTS="usr/bin/vte*.exe usr/share/doc/"
+libvte3_0_9_CONTENTS="usr/bin/cygvte3.0-9.dll usr/share/vte/termcap-3.0/ usr/share/locale/"
+libvte3_0_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte-3.0.pc usr/share/gtk-doc/'
+girepository_Vte3_0_CONTENTS="usr/*/gir*/Vte-3.0.*"
+
+CYGCONF_ARGS="
+	--disable-glade-catalogue
+	--disable-gnome-pty-helper
+	--enable-introspection
+	--with-default-emulation=xterm
+	--with-gtk=3.0
+"
