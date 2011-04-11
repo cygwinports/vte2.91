@@ -1,6 +1,6 @@
 category: Gnome
-requires: libvte3.0_9 libatk1.0-devel libcairo-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk3-devel gettext libncurses-devel libpango1.0-devel libX11-devel
-external-source: vte3.0
+requires: libvte2.90_9 libatk1.0-devel libcairo-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk3-devel gettext libncurses-devel libpango1.0-devel libX11-devel
+external-source: vte2.90
 sdesc: "GTK+ terminal emulator widget (development)"
 ldesc: "VTE includes a library (libvte) which implements such a terminal
 emulator widget for GTK+ 2.x, a sample application (vte) which

@@ -1,5 +1,5 @@
 category: Gnome Shells
-requires: libglib2.0_0 libgtk3_0 libpango1.0_0 libvte3.0_9
+requires: libglib2.0_0 libgtk3_0 libpango1.0_0 libvte2.90_9
 sdesc: "GTK+ terminal emulator widget (app)"
 ldesc: "VTE includes a library (libvte) which implements such a terminal
 emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
