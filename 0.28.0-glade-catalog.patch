@@ -7,10 +7,3 @@
    <glade-widget-classes>
      <glade-widget-class title="VTE Terminal" name="VteTerminal" generic-name="terminal">
        <properties>
-@@ -37,4 +37,4 @@
-     <glade-widget-class-ref name="VteTerminal"/>
-   </glade-widget-group>
- 
--</glade-catalog>
-\ No newline at end of file
-+</glade-catalog>
