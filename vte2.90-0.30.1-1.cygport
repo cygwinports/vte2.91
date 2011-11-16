@@ -5,6 +5,11 @@ DESCRIPTION="GNOME Virtual Terminal Emulator"
 
 PATCH_URI="0.28.0-glade-catalog.patch"
 
+DEPEND="gnome-common gtk-doc
+	girepository(Gtk-3.0)
+	pkgconfig(gtk+-3.0)
+	pkgconfig(ncurses)"
+
 PKG_NAMES="${PN} libvte2.90_9 libvte2.90-devel girepository-Vte2.90 glade-vte"
 vte2_90_CONTENTS="usr/bin/vte*.exe usr/share/doc/"
 libvte2_90_9_CONTENTS="usr/bin/cygvte2_90-9.dll usr/share/vte/termcap-2.90/ usr/share/locale/"
