@@ -4,8 +4,7 @@ inherit gnome2
 DESCRIPTION="GNOME Virtual Terminal Emulator"
 
 PATCH_URI="
-	http://patch-tracker.debian.org/patch/series/dl/vte3/1:0.30.1-3/02_meta.patch
-	0.28.0-glade-catalog.patch
+	0.32.1-glade-catalog.patch
 "
 
 DEPEND="gnome-common gtk-doc
@@ -15,7 +14,7 @@ DEPEND="gnome-common gtk-doc
 
 PKG_NAMES="${PN} libvte2.90_9 libvte2.90-devel girepository-Vte2.90 glade-vte"
 vte2_90_CONTENTS="usr/bin/vte*.exe usr/share/doc/"
-libvte2_90_9_CONTENTS="usr/bin/cygvte2_90-9.dll usr/share/vte/termcap-2.90/ usr/share/locale/"
+libvte2_90_9_CONTENTS="usr/bin/cygvte2_90-9.dll usr/share/locale/"
 libvte2_90_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte-2.90.pc usr/share/gtk-doc/'
 girepository_Vte2_90_CONTENTS="usr/*/gir*/Vte-2.90.*"
 glade_vte_CONTENTS="usr/share/glade/"
