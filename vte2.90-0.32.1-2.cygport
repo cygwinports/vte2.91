@@ -4,6 +4,7 @@ inherit gnome2
 DESCRIPTION="GNOME Virtual Terminal Emulator"
 
 PATCH_URI="
+	http://patch-tracker.debian.org/patch/series/dl/vte3/1:0.32.0-1/02_meta.patch
 	0.32.1-glade-catalog.patch
 "
 
@@ -26,3 +27,5 @@ CYGCONF_ARGS="
 	--with-default-emulation=xterm
 	--with-gtk=3.0
 "
+
+KEEP_LA_FILES="none"
