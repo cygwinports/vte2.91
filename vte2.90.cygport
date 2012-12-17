@@ -1,0 +1,40 @@
+ORIG_PN="vte"
+inherit gnome2
+
+NAME="vte2.90"
+VERSION=0.34.2
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GTK+ terminal emulator widget"
+DESCRIPTION="VTE includes a library (libvte) which implements such a terminal
+emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
+wraps that widget in a GTK window, and a Python binding."
+
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/vte3.git/plain/honey-I-shrank-the-terminal.patch
+	http://pkgs.fedoraproject.org/cgit/vte3.git/plain/vte-alt-meta-confusion.patch
+	http://pkgs.fedoraproject.org/cgit/vte3.git/plain/0001-widget-Only-show-the-cursor-on-motion-if-moved.patch
+	http://pkgs.fedoraproject.org/cgit/vte3.git/plain/vte3-make_VteCharAttributes_introspectable.patch
+	0.32.1-glade-catalog.patch
+"
+
+DEPEND="gnome-common gtk-doc
+	girepository(Gtk-3.0)
+	pkgconfig(gtk+-3.0)
+	pkgconfig(ncurses)"
+
+PKG_NAMES="${PN} libvte2.90_9 libvte2.90-devel girepository-Vte2.90 glade-vte"
+vte2_90_CONTENTS="usr/bin/vte*.exe usr/share/doc/"
+libvte2_90_9_CONTENTS="etc/profile.d/ usr/bin/cygvte2_90-9.dll usr/share/locale/"
+libvte2_90_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte-2.90.pc usr/share/gtk-doc/'
+girepository_Vte2_90_CONTENTS="usr/*/gir*/Vte-2.90.*"
+glade_vte_REQUIRES="glade libvte2.90_9"
+glade_vte_CONTENTS="usr/share/glade/"
+
+CYGCONF_ARGS="
+	--enable-glade-catalogue
+	--disable-gnome-pty-helper
+	--enable-introspection
+	--with-default-emulation=xterm
+	--with-gtk=3.0
+"

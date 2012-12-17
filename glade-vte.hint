@@ -1,7 +1,0 @@
-category: Gnome Devel
-requires: glade libvte2.90_9
-external-source: vte2.90
-sdesc: "Glade VTE terminal emulator widget catalog"
-ldesc: "VTE includes a library (libvte) which implements such a terminal
-emulator widget for GTK+ 2.x, a sample application (vte) which
-wraps that widget in a GTK window, and a Python binding."

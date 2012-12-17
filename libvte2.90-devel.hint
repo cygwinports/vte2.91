@@ -1,7 +1,0 @@
-category: Gnome
-requires: libvte2.90_9 libcairo-devel libglib2.0-devel libgtk3-devel libpango1.0-devel libX11-devel
-external-source: vte2.90
-sdesc: "GTK+ terminal emulator widget (development)"
-ldesc: "VTE includes a library (libvte) which implements such a terminal
-emulator widget for GTK+ 2.x, a sample application (vte) which
-wraps that widget in a GTK window, and a Python binding."

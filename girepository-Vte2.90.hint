@@ -1,7 +1,0 @@
-category: Gnome
-requires: girepository-Pango1.0 girepository-Gtk3.0 libvte2.90_9
-external-source: vte2.90
-sdesc: "GTK+ terminal emulator widget (GObject Introspection data)"
-ldesc: "VTE includes a library (libvte) which implements such a terminal
-emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
-wraps that widget in a GTK window, and a Python binding."
