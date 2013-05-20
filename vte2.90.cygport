@@ -2,7 +2,7 @@ ORIG_PN="vte"
 inherit gnome2
 
 NAME="vte2.90"
-VERSION=0.34.3
+VERSION=0.34.5
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GTK+ terminal emulator widget"
