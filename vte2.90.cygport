@@ -2,9 +2,9 @@ ORIG_PN="vte"
 inherit gnome2
 
 NAME="vte2.90"
-VERSION=0.34.5
+VERSION=0.34.7
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="GTK+ terminal emulator widget"
 DESCRIPTION="VTE includes a library (libvte) which implements such a terminal
 emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
@@ -22,7 +22,7 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(gtk+-3.0)
 	pkgconfig(ncurses)"
 
-PKG_NAMES="${PN} libvte2.90_9 libvte2.90-devel girepository-Vte2.90 glade-vte"
+PKG_NAMES="${NAME} libvte2.90_9 libvte2.90-devel girepository-Vte2.90 glade-vte"
 vte2_90_CONTENTS="usr/bin/vte*.exe usr/share/doc/"
 libvte2_90_9_CONTENTS="etc/profile.d/ usr/bin/cygvte2_90-9.dll usr/share/locale/"
 libvte2_90_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/vte-2.90.pc usr/share/gtk-doc/'
