@@ -2,7 +2,7 @@ ORIG_PN="vte"
 inherit gnome2
 
 NAME="vte2.90"
-VERSION=0.34.7
+VERSION=0.34.9
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GTK+ terminal emulator widget"
@@ -15,6 +15,7 @@ PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/vte3.git/plain/vte-alt-meta-confusion.patch
 	http://pkgs.fedoraproject.org/cgit/vte3.git/plain/0001-widget-Only-show-the-cursor-on-motion-if-moved.patch
 	0.32.1-glade-catalog.patch
+	0.34.9-cygwin.patch
 "
 
 DEPEND="gnome-common gtk-doc
