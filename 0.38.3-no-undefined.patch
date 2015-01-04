@@ -1,0 +1,10 @@
+--- origsrc/vte-0.38.3/src/Makefile.am	2014-12-15 15:38:52.000000000 -0600
++++ src/vte-0.38.3/src/Makefile.am	2015-01-04 11:52:19.981651600 -0600
+@@ -118,6 +118,7 @@ libvte_@VTE_API_MAJOR_VERSION@_@VTE_API_
+ 
+ libvte_@VTE_API_MAJOR_VERSION@_@VTE_API_MINOR_VERSION@_la_LDFLAGS = \
+ 	$(VTE_LDFLAGS) \
++	-no-undefined \
+ 	-version-info $(LT_VERSION_INFO) \
+ 	-export-symbols-regex "^vte_.*" \
+ 	$(AM_LDFLAGS)

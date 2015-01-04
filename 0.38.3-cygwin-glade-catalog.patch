@@ -1,0 +1,11 @@
+--- origsrc/vte-0.38.3/glade/vte.xml.in.in	2014-09-13 03:05:16.000000000 -0500
++++ src/vte-0.38.3/glade/vte.xml.in.in	2015-01-04 11:41:40.686754100 -0600
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <glade-catalog name="vte-@VTE_API_VERSION@"
+                version="@VERSION@"
+-               library="vte-@VTE_API_VERSION@"
++               library="vte-@VTE_API_VERSION@-0"
+                domain="vte-@VTE_API_VERSION@"
+                depends="gtk+"
+                book="vte"
