@@ -3,7 +3,7 @@
 @@ -118,6 +118,7 @@ libvte_@VTE_API_MAJOR_VERSION@_@VTE_API_
  
  libvte_@VTE_API_MAJOR_VERSION@_@VTE_API_MINOR_VERSION@_la_LDFLAGS = \
- 	$(VTE_LDFLAGS) \
+ 	$(VTE_CXXLDFLAGS) \
 +	-no-undefined \
  	-version-info $(LT_VERSION_INFO) \
  	-export-symbols-regex "^vte_.*" \
