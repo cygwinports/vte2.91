@@ -1,0 +1,18 @@
+--- origsrc/vte-0.46.1/src/vte.cc	2017-03-05 14:56:33.455707800 -0600
++++ src/vte-0.46.1/src/vte.cc	2017-03-05 15:02:30.855603900 -0600
+@@ -3928,6 +3928,7 @@ VteTerminalPrivate::pty_io_read(GIOChann
+ 					default:
+                                                 ret--;
+ 
++#ifdef TIOCPKT_IOCTL
+                                                 if (pkt_header & TIOCPKT_IOCTL) {
+                                                         /* We'd like to always be informed when the termios change,
+                                                          * so we can e.g. detect when no-echo is en/disabled and
+@@ -3941,6 +3942,7 @@ VteTerminalPrivate::pty_io_read(GIOChann
+                                                          */
+                                                         pty_termios_changed();
+                                                 }
++#endif
+                                                 if (pkt_header & TIOCPKT_STOP) {
+                                                         pty_scroll_lock_changed(true);
+                                                 } else if (pkt_header & TIOCPKT_START) {
