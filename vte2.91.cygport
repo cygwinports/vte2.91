@@ -3,7 +3,7 @@ inherit gnome2
 
 NAME="vte2.91"
 VERSION=0.46.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="GTK+ terminal emulator widget"
 DESCRIPTION="VTE includes a library (libvte) which implements such a terminal
