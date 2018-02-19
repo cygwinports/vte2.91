@@ -2,7 +2,7 @@ ORIG_PN="vte"
 inherit gnome2
 
 NAME="vte2.91"
-VERSION=0.48.3
+VERSION=0.50.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GTK+ terminal emulator widget"
@@ -11,7 +11,7 @@ emulator widget for GTK+ 2.2/2.4, a sample application (vte) which
 wraps that widget in a GTK window, and a Python binding."
 
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/rpms/vte291.git/plain/vte291-command-notify-scroll-speed.patch?h=f26
+	http://pkgs.fedoraproject.org/cgit/rpms/vte291.git/plain/vte291-command-notify-scroll-speed.patch?h=f27
 	0.38.3-cygwin-glade-catalog.patch
 	0.38.3-no-undefined.patch
 	0.46.1-cygwin-ioctl.patch
